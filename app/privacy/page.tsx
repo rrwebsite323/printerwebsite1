@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicy() {
+  // Privacy Policy page with comprehensive legal coverage
   const lastUpdated = 'December 11, 2024';
 
   return (
