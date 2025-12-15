@@ -7,6 +7,7 @@ export const siteConfig: SiteConfig = {
     phone: '+1 (805) 409-8787',
     smsNumber: '+1 (805) 409-8787',
     email: 'info@printersupportsonline.com',
+    web3formsAccessKey: 'YOUR_WEB3FORMS_ACCESS_KEY', // Replace with your actual Web3Forms access key
     hours: {
       monday: '8:00 AM - 6:00 PM',
       tuesday: '8:00 AM - 6:00 PM',

@@ -31,21 +31,81 @@ export default function ContactForm({
     setErrorMessage('');
 
     try {
-      // Simulate API call - replace with actual email service
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // Prepare form data for Web3Forms
+      const formData = new FormData();
+      formData.append('access_key', '7ccdae51-eac9-4f6b-92aa-ed6b82115b8d');
+      // Format service name for better readability
+      const formatServiceName = (service: string) => {
+        const serviceMap: { [key: string]: string } = {
+          'printer-repair': 'Printer Repair',
+          'maintenance': 'Maintenance & Support',
+          'installation': 'Installation & Setup',
+          'network-solutions': 'Network Printer Solutions',
+          'troubleshooting': 'Troubleshooting',
+          'emergency': 'Emergency Support'
+        };
+        return serviceMap[service] || service;
+      };
+
+      const selectedService = data.service ? formatServiceName(data.service) : 'Not specified';
       
-      console.log('Form submitted:', data);
+      // Append all form data
+      formData.append('name', data.name);
+      formData.append('email', data.email);
+      formData.append('phone', data.phone);
+      formData.append('service_requested', selectedService);
+      formData.append('message', data.message);
+      formData.append('from_name', 'Printer Supports Online Contact Form');
       
-      setSubmitStatus('success');
-      reset();
+      // Create a comprehensive email body
+      const emailBody = `
+New Contact Form Submission:
+
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Service Requested: ${selectedService}
+
+Message:
+${data.message}
+
+---
+Submitted from: Printer Supports Online Website
+Time: ${new Date().toLocaleString()}
+      `.trim();
       
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus('idle');
-      }, 5000);
-    } catch {
+      formData.append('message', emailBody);
+      
+      // Create a descriptive subject line
+      const serviceText = data.service ? ` - ${selectedService}` : '';
+      formData.append('subject', `New Contact: ${data.name}${serviceText}`);
+
+      // Submit to Web3Forms
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus('success');
+        reset();
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      } else {
+        throw new Error(result.message || 'Failed to send message');
+      }
+    } catch (error) {
       setSubmitStatus('error');
-      setErrorMessage('Failed to send message. Please try again or call us directly.');
+      setErrorMessage(
+        error instanceof Error 
+          ? error.message 
+          : 'Failed to send message. Please try again or call us directly.'
+      );
     }
   };
 
@@ -69,6 +129,14 @@ export default function ContactForm({
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6" id="contact-form">
+      {/* Web3Forms Configuration - Hidden Fields */}
+      <input type="hidden" name="access_key" value="7ccdae51-eac9-4f6b-92aa-ed6b82115b8d" />
+      <input type="hidden" name="from_name" value="Printer Supports Online Contact Form" />
+      <input type="hidden" name="redirect" value="false" />
+      
+      {/* Honeypot Spam Protection */}
+      <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+      
       {/* Name Field */}
       <div>
         <label htmlFor="name" className="block text-xs sm:text-sm font-semibold text-gray-700 mb-1.5 sm:mb-2">

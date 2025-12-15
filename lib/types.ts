@@ -12,6 +12,7 @@ export interface BusinessInfo {
   phone: string;
   smsNumber?: string;
   email: string;
+  web3formsAccessKey?: string;
   hours: BusinessHours;
 }
 
