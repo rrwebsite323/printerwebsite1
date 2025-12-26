@@ -6,7 +6,7 @@ interface BrandLogosGridProps {
   title?: string;
 }
 
-export default function BrandLogosGrid({ brands, title = 'We Support All Major Brands' }: BrandLogosGridProps) {
+export default function BrandLogosGrid({ brands, title = 'Authorized Service Partner' }: BrandLogosGridProps) {
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-white w-full mb-12 sm:mb-16 md:mb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -49,7 +49,7 @@ export default function BrandLogosGrid({ brands, title = 'We Support All Major B
         
         <div className="text-center mt-8 sm:mt-12">
           <p className="text-sm sm:text-base text-gray-500 font-medium px-4">
-            + Many more brands and models supported
+            + Many more brands and models serviced
           </p>
         </div>
       </div>

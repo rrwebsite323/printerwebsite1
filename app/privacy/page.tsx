@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { siteConfig } from '@/config/site-config';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Printer Supports Online',
-  description: 'Privacy Policy for Printer Supports Online - Learn how we protect and handle your personal information.',
+  title: 'Privacy Policy | Printer Support Online',
+  description: 'Privacy Policy for Printer Support Online - Learn how we protect and handle your personal information.',
 };
 
 export default function PrivacyPolicy() {
@@ -21,10 +21,15 @@ export default function PrivacyPolicy() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                At {siteConfig.business.name}, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our printer repair and support services.
+                At {siteConfig.business.name}, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our printer repair and service solutions.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 By using our services, you consent to the data practices described in this policy.
+              </p>
+              
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Authorized Service Partnership</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We are authorized service partners with all major printer brands listed on our website. As part of these partnerships, we may share necessary service and warranty information with manufacturer partners in accordance with their privacy policies and our service agreements. This ensures proper warranty coverage and service quality standards.
               </p>
             </section>
 
@@ -60,7 +65,7 @@ export default function PrivacyPolicy() {
                 We use the collected information for the following purposes:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>Providing printer repair and support services</li>
+                <li>Providing printer repair and service solutions</li>
                 <li>Communicating with you about service requests and appointments</li>
                 <li>Processing payments and maintaining service records</li>
                 <li>Improving our website and services</li>

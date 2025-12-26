@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Award, Users, MapPin, Shield } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Us | Printer Supports Online',
-  description: 'Learn about our expert printer repair and support services. Certified technicians serving customers across the USA.',
+  title: 'About Us | Printer Support Online',
+  description: 'Learn about our expert printer repair and service solutions. Certified technicians serving customers across the USA.',
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
             Your Trusted Printer Experts
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
-            Delivering professional printer support with expertise and dedication
+            Delivering professional printer service with expertise and dedication
           </p>
         </div>
       </section>
@@ -52,10 +52,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-3 sm:space-y-4 text-base sm:text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 2008, Printer Supports Online has been providing exceptional printer repair and support services to businesses and individuals across the United States.
+                  Founded in 2008, Printer Support Online has been providing exceptional printer repair and service solutions to businesses and individuals across the United States.
                 </p>
                 <p>
-                  Our mission is simple: deliver fast, reliable, and professional printer support that keeps your business running smoothly. With over 15 years of experience, we&apos;ve helped thousands of customers resolve their printer issues.
+                  Our mission is simple: deliver fast, reliable, and professional printer service that keeps your business running smoothly. With over 15 years of experience, we&apos;ve helped thousands of customers resolve their printer issues.
                 </p>
                 <p>
                   We pride ourselves on our certified technicians, comprehensive service offerings, and commitment to customer satisfaction.
@@ -121,7 +121,7 @@ export default function AboutPage() {
             Serving Customers Across the USA
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            We provide nationwide printer support services with local expertise. Our network of certified technicians ensures fast response times wherever you are.
+            We provide nationwide printer service solutions with local expertise. Our team of certified technicians ensures fast response times wherever you are.
           </p>
           
           <div className="bg-blue-50 rounded-3xl p-12 mb-8 max-w-4xl mx-auto">

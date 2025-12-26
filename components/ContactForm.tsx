@@ -38,11 +38,11 @@ export default function ContactForm({
       const formatServiceName = (service: string) => {
         const serviceMap: { [key: string]: string } = {
           'printer-repair': 'Printer Repair',
-          'maintenance': 'Maintenance & Support',
+          'maintenance': 'Maintenance & Service',
           'installation': 'Installation & Setup',
-          'network-solutions': 'Network Printer Solutions',
+          'connectivity-solutions': 'Connectivity Solutions',
           'troubleshooting': 'Troubleshooting',
-          'emergency': 'Emergency Support'
+          'emergency': 'Emergency Service'
         };
         return serviceMap[service] || service;
       };
@@ -55,7 +55,7 @@ export default function ContactForm({
       formData.append('phone', data.phone);
       formData.append('service_requested', selectedService);
       formData.append('message', data.message);
-      formData.append('from_name', 'Printer Supports Online Contact Form');
+      formData.append('from_name', 'Printer Support Online Contact Form');
       
       // Create a comprehensive email body
       const emailBody = `
@@ -70,7 +70,7 @@ Message:
 ${data.message}
 
 ---
-Submitted from: Printer Supports Online Website
+Submitted from: Printer Support Online Website
 Time: ${new Date().toLocaleString()}
       `.trim();
       
@@ -131,7 +131,7 @@ Time: ${new Date().toLocaleString()}
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6" id="contact-form">
       {/* Web3Forms Configuration - Hidden Fields */}
       <input type="hidden" name="access_key" value="7ccdae51-eac9-4f6b-92aa-ed6b82115b8d" />
-      <input type="hidden" name="from_name" value="Printer Supports Online Contact Form" />
+      <input type="hidden" name="from_name" value="Printer Support Online Contact Form" />
       <input type="hidden" name="redirect" value="false" />
       
       {/* Honeypot Spam Protection */}
@@ -232,11 +232,11 @@ Time: ${new Date().toLocaleString()}
           >
             <option value="">Select a service...</option>
             <option value="printer-repair">Printer Repair</option>
-            <option value="maintenance">Maintenance & Support</option>
+            <option value="maintenance">Maintenance & Service</option>
             <option value="installation">Installation & Setup</option>
-            <option value="network-solutions">Network Printer Solutions</option>
+            <option value="connectivity-solutions">Connectivity Solutions</option>
             <option value="troubleshooting">Troubleshooting</option>
-            <option value="emergency">Emergency Support</option>
+            <option value="emergency">Emergency Service</option>
           </select>
         </div>
       )}

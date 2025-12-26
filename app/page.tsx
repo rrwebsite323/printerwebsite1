@@ -27,7 +27,7 @@ export default function Home() {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 leading-tight">
                   Professional<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                    Printer Support
+                    Printer Service
                   </span>
                 </h1>
                 
@@ -160,8 +160,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Supported Brands */}
-      <BrandLogosGrid brands={siteConfig.content.brands} />
+      {/* Serviced Brands */}
+      <BrandLogosGrid brands={siteConfig.content.brands} title="Authorized Service Partner" />
+      
+      {/* Authorized Partner Notice */}
+      <section className="py-8 bg-gray-50 w-full">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <p className="text-lg text-gray-700 font-medium">
+            We are authorized service partners with all major printer brands listed on our website
+          </p>
+          <p className="text-sm text-gray-600 mt-2">
+            Certified technicians • Genuine parts • Manufacturer warranties honored
+          </p>
+        </div>
+      </section>
 
       {/* Stats Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white w-full flex justify-center mb-12 sm:mb-16 md:mb-20">
@@ -185,7 +197,7 @@ export default function Home() {
             </div>
             <div className="px-2">
               <div className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-2">24/7</div>
-              <div className="text-sm sm:text-base md:text-lg text-blue-100">Support</div>
+              <div className="text-sm sm:text-base md:text-lg text-blue-100">Service</div>
             </div>
           </div>
         </div>
@@ -199,7 +211,7 @@ export default function Home() {
               Ready to Get Started?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-10 px-4">
-              Get expert printer support today. Free quotes, fast service.
+              Get expert printer service today. Free quotes, fast service.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">

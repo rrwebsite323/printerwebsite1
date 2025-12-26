@@ -3,8 +3,8 @@ import ContactForm from '@/components/ContactForm';
 import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact Us | Printer Supports Online',
-  description: 'Get in touch with our printer support experts. Call, email, or fill out our contact form for fast assistance.',
+  title: 'Contact Us | Printer Support Online',
+  description: 'Get in touch with our printer service experts. Call, email, or fill out our contact form for fast assistance.',
 };
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
-            We&apos;re here to help with all your printer support needs
+            We&apos;re here to help with all your printer service needs
           </p>
         </div>
       </section>
@@ -117,7 +117,7 @@ export default function ContactPage() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <p className="text-sm font-semibold text-green-600">
-                    24/7 Emergency Support Available
+                    24/7 Emergency Service Available
                   </p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 mt-0.5">✓</span>
-                    <span>All major brands supported</span>
+                    <span>All major brands serviced</span>
                   </li>
                 </ul>
               </div>
@@ -178,7 +178,7 @@ export default function ContactPage() {
                 <Mail className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Send SMS</h3>
-              <p className="text-gray-600 mb-3">Quick text message support</p>
+              <p className="text-gray-600 mb-3">Quick text message service</p>
               <p className="text-blue-600 font-semibold">Text Us</p>
             </a>
 

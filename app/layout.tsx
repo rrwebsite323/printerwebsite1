@@ -13,9 +13,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Printer Supports Online | Expert Printer Repair & Support',
-  description: 'Professional printer repair and support services across the USA. Fast response, certified technicians, all brands supported. Get a free quote today!',
-  keywords: 'printer repair, printer support, printer service, USA, HP, Canon, Epson, Brother',
+  title: 'Printer Support Online | Expert Printer Repair & Service',
+  description: 'Professional printer repair and service solutions across the USA. Fast response, certified technicians, all brands serviced. Get a free quote today!',
+  keywords: 'printer repair, printer service, printer maintenance, USA, HP, Canon, Epson, Brother',
   robots: 'index, follow',
   icons: {
     icon: '/logo.svg',
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     apple: '/logo.svg',
   },
   openGraph: {
-    title: 'Printer Supports Online | Expert Printer Repair & Support',
-    description: 'Professional printer repair and support services across the USA',
+    title: 'Printer Support Online | Expert Printer Repair & Service',
+    description: 'Professional printer repair and service solutions across the USA',
     type: 'website',
   },
 };

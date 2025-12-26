@@ -2,8 +2,8 @@ import { SiteConfig } from '@/lib/types';
 
 export const siteConfig: SiteConfig = {
   business: {
-    name: 'Printer Supports Online',
-    tagline: 'Expert Printer Repair & Support Services',
+    name: 'Printer Support Online',
+    tagline: 'Expert Printer Repair & Service Solutions',
     phone: '+1 (805) 409-8787',
     smsNumber: '+1 (805) 409-8787',
     email: 'info@printersupportsonline.com',
@@ -51,14 +51,14 @@ export const siteConfig: SiteConfig = {
         ],
       },
       {
-        id: 'maintenance-support',
-        title: 'Maintenance & Support',
-        description: 'Keep your printers running smoothly with regular maintenance and ongoing technical support. Prevent issues before they occur with our comprehensive care plans.',
+        id: 'maintenance-service',
+        title: 'Maintenance & Service',
+        description: 'Keep your printers running smoothly with regular maintenance and ongoing professional service. Prevent issues before they occur with our comprehensive care plans.',
         icon: 'settings',
         features: [
           'Regular maintenance schedules',
           'Preventive care',
-          'Technical support hotline',
+          'Professional service hotline',
           'Performance optimization',
         ],
       },
@@ -68,19 +68,19 @@ export const siteConfig: SiteConfig = {
         description: 'Professional installation and configuration of new printers. We ensure your devices are properly connected, configured, and optimized for your specific needs.',
         icon: 'package',
         features: [
-          'New printer installation',
-          'Network configuration',
+          'Printer installation',
+          'System configuration',
           'Driver installation',
           'User training',
         ],
       },
       {
-        id: 'network-solutions',
-        title: 'Network Printer Solutions',
-        description: 'Expert setup and troubleshooting for network printers. We configure secure connections, manage print servers, and resolve connectivity issues.',
-        icon: 'network',
+        id: 'connectivity-solutions',
+        title: 'Connectivity Solutions',
+        description: 'Expert setup and troubleshooting for printer connections. We configure secure connections, manage print servers, and resolve connectivity issues.',
+        icon: 'settings',
         features: [
-          'Network printer setup',
+          'Printer connectivity setup',
           'Print server configuration',
           'Wireless connectivity',
           'Security configuration',
@@ -99,8 +99,8 @@ export const siteConfig: SiteConfig = {
         ],
       },
       {
-        id: 'emergency-support',
-        title: 'Emergency Support',
+        id: 'emergency-service',
+        title: 'Emergency Service',
         description: 'Urgent printer repair services when you need them most. Fast response times and priority service to minimize downtime for your business.',
         icon: 'zap',
         features: [
@@ -126,7 +126,7 @@ export const siteConfig: SiteConfig = {
       },
       {
         id: 'all-brands',
-        title: 'All Brands Supported',
+        title: 'All Brands Serviced',
         description: 'From HP to Canon, Epson to Brother, we service all major printer brands with genuine parts and expert knowledge.',
         icon: 'check-circle',
       },
@@ -167,7 +167,7 @@ export const siteConfig: SiteConfig = {
       {
         id: 'connectivity',
         title: 'Connectivity Issues',
-        description: 'Can\'t connect to your printer? We resolve network, wireless, and USB connection problems.',
+        description: 'Can\'t connect to your printer? We resolve wireless, USB, and connection problems.',
         icon: 'wifi-off',
       },
       {

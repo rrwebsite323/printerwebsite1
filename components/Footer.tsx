@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="mb-6">
               <img 
                 src="/logo.svg" 
-                alt="Printer Supports Online" 
+                alt="Printer Support Online" 
                 className="h-12 w-auto"
               />
             </div>
@@ -29,7 +29,7 @@ export default function Footer() {
               {siteConfig.business.tagline}
             </p>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Serving customers across the USA with professional printer repair and support services.
+              Serving customers across the USA with professional printer repair and service solutions.
             </p>
           </div>
 

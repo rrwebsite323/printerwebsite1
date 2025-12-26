@@ -6,8 +6,8 @@ import * as Icons from 'lucide-react';
 import { Phone } from 'lucide-react';
 
 export const metadata = {
-  title: 'Printer Services | Printer Supports Online',
-  description: 'Professional printer repair, maintenance, installation, and support services for all major brands.',
+  title: 'Printer Services | Printer Support Online',
+  description: 'Professional printer repair, maintenance, installation, and service solutions for all major brands.',
 };
 
 export default function ServicesPage() {
@@ -20,7 +20,7 @@ export default function ServicesPage() {
             Professional Printer Services
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-2xl mx-auto px-4">
-            Comprehensive printer support solutions for businesses across the USA
+            Comprehensive printer service solutions for businesses across the USA
           </p>
         </div>
       </section>
@@ -102,7 +102,7 @@ export default function ServicesPage() {
             Need Help With Your Printer?
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 text-blue-100 px-4">
-            Contact us today for fast, professional printer support
+            Contact us today for fast, professional printer service
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
             <Button href="/contact" variant="secondary" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4">

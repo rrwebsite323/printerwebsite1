@@ -47,7 +47,7 @@ export default function Header() {
           <Link href="/" className="flex items-center">
             <img 
               src="/logo.svg" 
-              alt="Printer Supports Online" 
+              alt="Printer Support Online" 
               className="h-[75px] w-auto md:h-[88px]"
             />
           </Link>

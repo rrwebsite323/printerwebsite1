@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { siteConfig } from '@/config/site-config';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Printer Supports Online',
-  description: 'Terms of Service for Printer Supports Online - Read our terms and conditions for using our printer repair services.',
+  title: 'Terms of Service | Printer Support Online',
+  description: 'Terms of Service for Printer Support Online - Read our terms and conditions for using our printer repair services.',
 };
 
 export default function TermsOfService() {
@@ -30,16 +30,21 @@ export default function TermsOfService() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of Services</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                {siteConfig.business.name} provides professional printer repair, maintenance, installation, and technical support services. Our services include but are not limited to:
+                {siteConfig.business.name} provides professional printer repair, maintenance, installation, and service solutions. Our services include but are not limited to:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
                 <li>On-site and remote printer repair services</li>
                 <li>Printer installation and setup</li>
-                <li>Network printer configuration</li>
+                <li>Printer connectivity configuration</li>
                 <li>Maintenance and preventive care</li>
-                <li>Technical support and troubleshooting</li>
+                <li>Professional service and troubleshooting</li>
                 <li>Emergency repair services</li>
               </ul>
+              
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Authorized Service Partnership</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We are authorized service partners with all major printer brands listed on our website. This partnership ensures that our services meet manufacturer standards and that we use genuine parts and approved repair procedures. Our certified technicians are trained and authorized to perform warranty and non-warranty repairs on these brands.
+              </p>
             </section>
 
             <section className="mb-8">
@@ -55,7 +60,7 @@ export default function TermsOfService() {
 
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Service Area</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We provide services throughout the United States. Travel charges may apply for locations outside our standard service area. Remote support services are available nationwide.
+                We provide services throughout the United States. Travel charges may apply for locations outside our standard service area. Remote service solutions are available nationwide.
               </p>
 
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Equipment Access</h3>
