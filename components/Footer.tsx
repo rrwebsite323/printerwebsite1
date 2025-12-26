@@ -50,7 +50,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info & Location */}
           <div>
             <h3 className="text-white font-bold text-lg mb-6">Contact Us</h3>
             <ul className="space-y-4">
@@ -73,6 +73,27 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+            
+            {/* Business Location */}
+            {siteConfig.business.address && (
+              <div className="mt-6">
+                <h4 className="text-white font-semibold text-base mb-3">Business Location</h4>
+                <div className="text-gray-400 text-sm leading-relaxed">
+                  <p className="font-medium">{siteConfig.business.address.company}</p>
+                  <p>{siteConfig.business.address.street}</p>
+                  <p>{siteConfig.business.address.city}, {siteConfig.business.address.state} {siteConfig.business.address.zipCode}</p>
+                  <p>{siteConfig.business.address.country}</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Service Area */}
+            {siteConfig.business.serviceArea && (
+              <div className="mt-4">
+                <h4 className="text-white font-semibold text-base mb-2">Service Area</h4>
+                <p className="text-gray-400 text-sm">{siteConfig.business.serviceArea}</p>
+              </div>
+            )}
           </div>
 
           {/* Business Hours */}
@@ -99,6 +120,8 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400">
             © {currentYear} {siteConfig.business.name}. All rights reserved.
+            <br className="sm:hidden" />
+            <span className="sm:ml-2">Operated by {siteConfig.business.operatedBy}</span>
           </p>
           <div className="flex gap-8">
             <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">

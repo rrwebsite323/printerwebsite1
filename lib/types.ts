@@ -13,7 +13,20 @@ export interface BusinessInfo {
   smsNumber?: string;
   email: string;
   web3formsAccessKey?: string;
+  operatedBy?: string;
+  address?: BusinessAddress;
+  serviceArea?: string;
   hours: BusinessHours;
+}
+
+export interface BusinessAddress {
+  company: string;
+  street: string;
+  city: string;
+  state: string;
+  zipCode: string;
+  country: string;
+  formatted: string;
 }
 
 export interface BusinessHours {

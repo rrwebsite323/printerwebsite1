@@ -71,8 +71,19 @@ export default function ContactPage() {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold text-gray-900">Service Area</p>
-                      <p className="text-gray-600">Nationwide USA Coverage</p>
+                      <p className="font-semibold text-gray-900">Business Location</p>
+                      {siteConfig.business.address && (
+                        <div className="text-gray-600 text-sm leading-relaxed">
+                          <p className="font-medium">{siteConfig.business.address.company}</p>
+                          <p>{siteConfig.business.address.street}</p>
+                          <p>{siteConfig.business.address.city}, {siteConfig.business.address.state} {siteConfig.business.address.zipCode}</p>
+                          <p>{siteConfig.business.address.country}</p>
+                        </div>
+                      )}
+                      <div className="mt-3">
+                        <p className="font-semibold text-gray-900">Service Area</p>
+                        <p className="text-gray-600">{siteConfig.business.serviceArea || 'Nationwide USA Coverage'}</p>
+                      </div>
                     </div>
                   </div>
                 </div>

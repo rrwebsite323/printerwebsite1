@@ -8,6 +8,17 @@ export const siteConfig: SiteConfig = {
     smsNumber: '+1 (805) 409-8787',
     email: 'info@printersupportsonline.com',
     web3formsAccessKey: 'YOUR_WEB3FORMS_ACCESS_KEY', // Replace with your actual Web3Forms access key
+    operatedBy: 'Margarito Ramirez LLC',
+    address: {
+      company: 'MARGARITO RAMIREZ LLC',
+      street: '5025 Archway Dr',
+      city: 'La Porte',
+      state: 'TX',
+      zipCode: '77571',
+      country: 'USA',
+      formatted: '5025 Archway Dr, La Porte, TX 77571, USA'
+    },
+    serviceArea: 'Nationwide USA Coverage',
     hours: {
       monday: '8:00 AM - 6:00 PM',
       tuesday: '8:00 AM - 6:00 PM',
